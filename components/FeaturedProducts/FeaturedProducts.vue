@@ -27,10 +27,12 @@ const props = defineProps<{
 }>();
 
 const handle = props.collectionHandle;
+console.log('handle:',handle)
 const numProducts = props.numberProducts || 4;
 const { result, error } = useQuery(collectionByHandle, {
   handle,
   numProducts,
 });
 const collection = useResult(result, null, (data) => data.collectionByHandle);
+console.log('collection:',collection)
 </script>

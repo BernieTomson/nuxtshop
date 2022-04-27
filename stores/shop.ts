@@ -10,12 +10,12 @@ export const useShopStore = defineStore("shop", {
       localization: {
         country: {
           currency: {
-            isoCode: "USD",
+            isoCode: "SEK",
           },
         },
       },
       menuOpen: false,
-      moneyFormat: "$",
+      moneyFormat: "kr",
     };
   },
   actions: {
@@ -33,7 +33,7 @@ export const useShopStore = defineStore("shop", {
         }
 
         this.description = data?.shop?.description ?? "";
-        this.moneyFormat = data?.shop?.moneyFormat ?? "$";
+        this.moneyFormat = data?.shop?.moneyFormat ?? "kr";
         this.localization = data?.localization ?? {};
       } catch (e) {
         return e;

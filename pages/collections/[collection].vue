@@ -34,10 +34,13 @@ import { collectionByHandle } from "~/apollo/queries/collectionByHandle";
 
 const route = useRoute();
 const handle = route.params.collection;
+console.log('handle:',route.params)
 
 const { result, error } = useQuery(collectionByHandle, {
   handle,
   numProducts: 48,
 });
+
 const collection = useResult(result, null, (data) => data.collectionByHandle);
+console.log('collection:',collection)
 </script>

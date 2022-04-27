@@ -17,19 +17,19 @@ export const useCartStore = defineStore("cart", {
         estimatedCost: {
           subtotalAmount: {
             amount: "",
-            currencyCode: "USD",
+            currencyCode: "SEK",
           },
           totalTaxAmount: {
             amount: "",
-            currencyCode: "USD",
+            currencyCode: "SEK",
           },
           totalDutyAmount: {
             amount: "",
-            currencyCode: "USD",
+            currencyCode: "SEK",
           },
           totalAmount: {
             amount: "",
-            currencyCode: "USD",
+            currencyCode: "SEK",
           },
         },
         id: null,
